@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Josefin Slab', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content {
+    width: 1440px;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #e1e1e1;
+
+    .header {
+        .hero {
+            img {}
+        }
+    }
+
+
+
+    .main {
+        padding: 32px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .description {
+            font-size: 32px;
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 24px;
+            width: 800px;
+            max-width: 100%;
+
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+            }
+
+        }
+
+        .cta-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
+
+            a.cta {
+                background-color: #6B0001;
+                color: white;
+                padding: 12px 24px;
+                font-weight: 600;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 0 0 20px -10px #000000;
+                font-size: 24px;
+            }
+        }
+
+        .openingHours {
+            margin-top: 32px;
+            text-align: center;
+            width: calc(100% + 64px);
+            padding: 48px;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0px 0px 20px #000000;
+
+            h3.title {
+                font-size: 32px;
+                margin-bottom: 16px;
+                position: relative;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 0;
+                filter: blur(4px);
+            }
+
+            .hours {
+                font-size: 24px;
+                line-height: 1.5;
+                z-index: 1;
+                position: relative;
+            }
+        }
+
+        .photos {
+            display: flex;
+            margin-top: 72px;
+            justify-content: space-evenly;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 32px;
+
+            .photo {
+                width: 400px;
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    border-radius: 16px;
+                    box-shadow: 0 0 20px -10px #000000;
+                }
+
+                p {
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: #2b2b2b;
+        color: white;
+        padding: 32px;
+
+        .location {
+            font-size: 32px;
+            line-height: 1.5;
+        }
+    }
+}
