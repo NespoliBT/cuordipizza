@@ -100,7 +100,8 @@ img {
     width: 100%;
     aspect-ratio: 16/5;
     max-width: fit-content;
-    margin-top: 50px; }
+    margin-top: 50px;
+    min-height: 160px; }
     .content .swiper .swiper-button-next::after,
     .content .swiper .swiper-button-prev::after {
       color: #000000; }
